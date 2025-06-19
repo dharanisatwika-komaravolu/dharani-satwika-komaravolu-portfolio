@@ -10,17 +10,20 @@ const Hero = () => {
           {/* Text Content */}
           <div className="flex-1 text-center lg:text-left">
             <div className="animate-fade-in">
-              <h1 className="text-5xl lg:text-7xl font-bold mb-6">
-                <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
-                  Dharani Satwika
-                </span>
+              <h1 className="text-4xl lg:text-6xl font-bold mb-2 text-gray-800">
+                Dharani Satwika Komaravolu
               </h1>
-              <h2 className="text-2xl lg:text-3xl text-gray-600 mb-6 font-light">
-                Komaravolu
-              </h2>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Passionate Web & Software Developer with a Master's in Computer Science from UT Arlington. 
-                I transform ideas into dynamic, responsive, and user-focused applications.
+              <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-teal-600 mx-auto lg:mx-0 rounded-full mb-8"></div>
+              
+              <p className="text-xl lg:text-2xl text-gray-600 mb-8 leading-relaxed">
+                <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent font-semibold">
+                  Passionate Web & Software Developer
+                </span> with a Master's in Computer Science from UT Arlington. 
+                I'm driven by the endless possibilities of technology and specialize in creating 
+                <span className="font-semibold text-gray-700"> dynamic, intelligent web applications</span> that seamlessly blend 
+                <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent font-semibold"> AI/ML capabilities</span> with 
+                exceptional user experiences. From responsive frontends to smart backends, I transform complex ideas into 
+                elegant, scalable solutions that make a real impact.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">

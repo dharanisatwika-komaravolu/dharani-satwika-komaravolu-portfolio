@@ -15,6 +15,20 @@ const Experience = () => {
       ]
     },
     {
+      title: "Salesforce Developer Intern",
+      company: "SmartInternz",
+      period: "Apr 2022 – Jun 2022",
+      logo: "https://media.licdn.com/dms/image/C510BAQHF3K5AZvfZvg/company-logo_200_200/0/1630657492043/smartinternz_logo?e=1759536000&v=beta&t=YCOpxS3HTIaJNTvgjYElw3u1QKHGKrpzlF6bB6a7N8Q",
+      achievements: [
+        "Completed comprehensive 8-week virtual Salesforce development program, mastering core platform concepts and organizational architecture",
+        "Designed and implemented complex automation workflows using Flow Builder, demonstrating expertise in relationship management and process automation",
+        "Developed custom Apex code with rigorous testing and debugging practices, ensuring high-quality solutions and optimal test coverage",
+        "Built dynamic Lightning Web Components (LWC) and integrated APIs to create enhanced user experiences and seamless data interactions",
+        "Configured professional development environment using Visual Studio Code with Salesforce CLI for efficient deployment and version control",
+        "Earned prestigious Super Badges: Apex Specialist and Process Automation Specialist, validating advanced technical skills in Salesforce ecosystem"
+      ]
+    },
+    {
       title: "AI-ML Virtual Internship",
       company: "AICTE",
       period: "Oct 2021 – Dec 2021",
@@ -48,11 +62,20 @@ const Experience = () => {
                 
                 <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-8">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                    <div>
-                      <h3 className="text-2xl font-bold text-gray-800 mb-2">{exp.title}</h3>
-                      <div className="flex items-center text-blue-600 mb-2">
-                        <Briefcase className="w-5 h-5 mr-2" />
-                        <span className="text-lg font-semibold">{exp.company}</span>
+                    <div className="flex items-center mb-4 md:mb-0">
+                      {exp.logo && (
+                        <img 
+                          src={exp.logo} 
+                          alt={`${exp.company} logo`}
+                          className="w-12 h-12 rounded-lg mr-4 object-contain bg-white shadow-sm"
+                        />
+                      )}
+                      <div>
+                        <h3 className="text-2xl font-bold text-gray-800 mb-2">{exp.title}</h3>
+                        <div className="flex items-center text-blue-600 mb-2">
+                          <Briefcase className="w-5 h-5 mr-2" />
+                          <span className="text-lg font-semibold">{exp.company}</span>
+                        </div>
                       </div>
                     </div>
                     <div className="flex items-center text-gray-500">
