@@ -1,52 +1,56 @@
 
 import React from 'react';
-import { ExternalLink, Github } from 'lucide-react';
+import { Github } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
     {
       title: "Medication Reminder System",
-      description: "A scalable medication management system with real-time reminders and HIPAA-compliant security.",
+      description: "Developed a scalable medication management system with a fully functional user interface, enabling seamless CRUD operations for user profiles, prescriptions, and reminders through secure API communication. Implemented real-time medication reminders using Firebase Cloud Messaging, reducing missed doses by 30% in testing while ensuring HIPAA-compliant data security and role-based access control (RBAC) for user privacy.",
       technologies: ["React.js", "MySQL", "Node.js", "Python", "Firebase"],
       achievements: [
         "Reduced missed doses by 30% through Firebase Cloud Messaging",
-        "Implemented RBAC for enhanced user privacy",
+        "Implemented RBAC for enhanced user privacy and HIPAA compliance",
         "Full CRUD operations with secure API communication"
       ],
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=500"
+      image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&h=300&fit=crop",
+      githubUrl: "https://github.com/dharanisatwika-komaravolu/Medication_Reminder"
     },
     {
       title: "Smart Health Hub",
-      description: "Comprehensive healthcare platform with appointment booking, prescription management, and real-time chat.",
+      description: "Secure authentication and role-based access were integrated, ensuring 100% efficiency in appointment booking, prescription management, and health record tracking, while cutting down manual administrative tasks by 40%. Real-time chat and interactive healthcare services, including a symptom checker and e-prescriptions, enhanced doctor-patient communication by 60% and reduced response time to queries by 50%.",
       technologies: ["React.js", "PHP", "Node.js", "MySQL"],
       achievements: [
         "100% efficiency in appointment booking and health record tracking",
         "Enhanced doctor-patient communication by 60%",
         "Reduced response time to queries by 50%"
       ],
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500"
+      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&h=300&fit=crop",
+      githubUrl: "https://github.com/dharanisatwika-komaravolu/Smart_Health_Hub"
     },
     {
       title: "Urban Mobility Optimization",
-      description: "AI-powered framework for optimizing public transportation using machine learning algorithms.",
+      description: "AI-powered framework for optimizing public transportation using machine learning algorithms including genetic algorithms and K-means clustering to improve scheduling efficiency and reduce passenger wait times using real-world geospatial data.",
       technologies: ["Python", "Machine Learning", "Genetic Algorithms", "K-means Clustering"],
       achievements: [
         "20% improvement in scheduling efficiency",
         "25% reduction in passenger wait times",
         "Utilized real-world geospatial data for accurate analysis"
       ],
-      image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=500"
+      image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=500&h=300&fit=crop",
+      githubUrl: "https://github.com/dharanisatwika-komaravolu/Revolutionizing_Urban_Mobility"
     },
     {
       title: "AI-Powered Skin Cancer Detection",
-      description: "CNN-based system for early skin cancer detection with high accuracy classification.",
+      description: "Developed and trained a Convolutional Neural Network (CNN) using Python, TensorFlow, and OpenCV to detect skin cancer from images, achieving 90% classification accuracy. Published research in Springer Journal after applying advanced image preprocessing techniques to improve model precision and reduce false positives by 25%.",
       technologies: ["OpenCV", "Python", "TensorFlow", "CNN"],
       achievements: [
         "Achieved 90% classification accuracy",
         "Reduced false positives by 25%",
         "Published research in Springer Journal"
       ],
-      image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=500"
+      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=300&fit=crop",
+      githubUrl: "#" // This project doesn't have a GitHub link provided
     }
   ];
 
@@ -77,7 +81,7 @@ const Projects = () => {
               
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-800 mb-3">{project.title}</h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">{project.description}</p>
+                <p className="text-gray-600 mb-4 leading-relaxed text-sm">{project.description}</p>
                 
                 <div className="mb-4">
                   <div className="flex flex-wrap gap-2">
@@ -105,14 +109,17 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <button className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-teal-600 text-white rounded-lg hover:shadow-lg transition-all duration-300">
-                    <ExternalLink size={16} />
-                    <span>Live Demo</span>
-                  </button>
-                  <button className="flex items-center gap-2 px-4 py-2 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300">
-                    <Github size={16} />
-                    <span>Code</span>
-                  </button>
+                  {project.githubUrl !== "#" && (
+                    <a 
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-teal-600 text-white rounded-lg hover:shadow-lg transition-all duration-300"
+                    >
+                      <Github size={16} />
+                      <span>View Code</span>
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

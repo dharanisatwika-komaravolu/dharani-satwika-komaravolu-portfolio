@@ -47,22 +47,20 @@ const Hero = () => {
                   <Mail className="w-6 h-6 text-gray-600" />
                 </a>
                 <a 
-                  href="#"
+                  href="https://www.linkedin.com/in/dharani-komaravolu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-3 bg-white rounded-full shadow-md hover:shadow-lg hover:scale-110 transition-all duration-300"
                 >
                   <Linkedin className="w-6 h-6 text-gray-600" />
                 </a>
                 <a 
-                  href="#"
+                  href="https://github.com/dharanisatwika-komaravolu"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-3 bg-white rounded-full shadow-md hover:shadow-lg hover:scale-110 transition-all duration-300"
                 >
                   <Github className="w-6 h-6 text-gray-600" />
-                </a>
-                <a 
-                  href="#"
-                  className="p-3 bg-white rounded-full shadow-md hover:shadow-lg hover:scale-110 transition-all duration-300"
-                >
-                  <ExternalLink className="w-6 h-6 text-gray-600" />
                 </a>
               </div>
             </div>
