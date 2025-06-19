@@ -10,20 +10,19 @@ const Hero = () => {
           {/* Text Content */}
           <div className="flex-1 text-center lg:text-left">
             <div className="animate-fade-in">
-              <h1 className="text-4xl lg:text-6xl font-bold mb-2 text-gray-800">
+              <h1 className="text-4xl lg:text-6xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 animate-gradient drop-shadow-lg">
                 Dharani Satwika Komaravolu
               </h1>
-              <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-teal-600 mx-auto lg:mx-0 rounded-full mb-8"></div>
+              <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-teal-600 mx-auto lg:mx-0 rounded-full mb-8 animate-pulse"></div>
               
               <p className="text-xl lg:text-2xl text-gray-600 mb-8 leading-relaxed">
                 <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent font-semibold">
                   Passionate Web & Software Developer
-                </span> with a Master's in Computer Science from UT Arlington. 
-                I'm driven by the endless possibilities of technology and specialize in creating 
-                <span className="font-semibold text-gray-700"> dynamic, intelligent web applications</span> that seamlessly blend 
-                <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent font-semibold"> AI/ML capabilities</span> with 
-                exceptional user experiences. From responsive frontends to smart backends, I transform complex ideas into 
-                elegant, scalable solutions that make a real impact.
+                </span> with a Master's in Computer Science from UT Arlington.
+                <br />
+                Specializing in creating dynamic, intelligent web applications that blend AI/ML capabilities with exceptional user experiences.
+                <br />
+                Transforming complex ideas into elegant, scalable solutions that make a real impact in the digital world.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">

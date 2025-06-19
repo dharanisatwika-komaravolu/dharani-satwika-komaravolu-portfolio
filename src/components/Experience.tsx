@@ -10,21 +10,19 @@ const Experience = () => {
       period: "May 2022 – Jan 2023",
       achievements: [
         "Developed hands-on expertise in Java, MySQL, Git, Unix Commands, Web Programming, Agile, Maven, and Cloud Computing, improving coding efficiency by 40%",
-        "Gained proficiency in SDLC, unit testing, and version control, participated in 15+ professional training sessions and 10+ workshops",
-        "Enhanced technical proficiency and personal growth through structured learning programs"
+        "Gained proficiency in SDLC, unit testing, and version control through structured learning programs",
+        "Participated in 15+ professional training sessions and 10+ workshops to enhance technical skills",
+        "Enhanced technical proficiency and personal growth through comprehensive development programs"
       ]
     },
     {
       title: "Salesforce Developer Intern",
       company: "SmartInternz",
       period: "Apr 2022 – Jun 2022",
-      logo: "https://media.licdn.com/dms/image/C510BAQHF3K5AZvfZvg/company-logo_200_200/0/1630657492043/smartinternz_logo?e=1759536000&v=beta&t=YCOpxS3HTIaJNTvgjYElw3u1QKHGKrpzlF6bB6a7N8Q",
       achievements: [
         "Completed comprehensive 8-week virtual Salesforce development program, mastering core platform concepts and organizational architecture",
         "Designed and implemented complex automation workflows using Flow Builder, demonstrating expertise in relationship management and process automation",
         "Developed custom Apex code with rigorous testing and debugging practices, ensuring high-quality solutions and optimal test coverage",
-        "Built dynamic Lightning Web Components (LWC) and integrated APIs to create enhanced user experiences and seamless data interactions",
-        "Configured professional development environment using Visual Studio Code with Salesforce CLI for efficient deployment and version control",
         "Earned prestigious Super Badges: Apex Specialist and Process Automation Specialist, validating advanced technical skills in Salesforce ecosystem"
       ]
     },
@@ -35,7 +33,8 @@ const Experience = () => {
       achievements: [
         "Gained practical AI and ML skills, including Python programming, machine learning algorithms, and data analysis",
         "Executed hands-on projects in image recognition, NLP, and data science, applying AI/ML techniques to solve industry-relevant problems",
-        "Improved efficiency by 40% through structured learning and implementation"
+        "Improved efficiency by 40% through structured learning and implementation of machine learning concepts",
+        "Developed strong foundation in artificial intelligence and data science methodologies"
       ]
     }
   ];
@@ -63,13 +62,6 @@ const Experience = () => {
                 <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-8">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                     <div className="flex items-center mb-4 md:mb-0">
-                      {exp.logo && (
-                        <img 
-                          src={exp.logo} 
-                          alt={`${exp.company} logo`}
-                          className="w-12 h-12 rounded-lg mr-4 object-contain bg-white shadow-sm"
-                        />
-                      )}
                       <div>
                         <h3 className="text-2xl font-bold text-gray-800 mb-2">{exp.title}</h3>
                         <div className="flex items-center text-blue-600 mb-2">
