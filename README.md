@@ -1,73 +1,61 @@
-# Welcome to your Lovable project
+# 🌐 Dharani Satwika Komaravolu – Portfolio
 
-## Project info
+Welcome to the repository for my personal website, showcasing my profile, projects, skills, and contact information.
 
-**URL**: https://lovable.dev/projects/12137de8-a8ae-4e44-91dd-34f9d0a49e15
+---
 
-## How can I edit this code?
+## 🚀 Live Demo
 
-There are several ways of editing your application.
+Explore the live site here:  
+https://dharani-satwika-komaravolu-portfolio.lovable.app/
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://dharani-satwika-komaravolu-portfolio.lovable.app/) and start prompting.
+## 📌 Table of Contents
 
-Changes made via Lovable will be committed automatically to this repo.
+1. [About Me](#-about-me)  
+2. [Technologies Used](#-technologies-used)  
+3. [Features](#-features)  
+4. [Getting Started](#-getting-started)  
+5. [Project Structure](#-project-structure)  
+6. [Deployment](#-deployment)  
+7. [License](#-license)  
+8. [Contact](#-contact)
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 💼 About Me
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+I am **Dharani Satwika Komaravolu**, a Full Stack Web Developer and recent Computer Science graduate from the University of Texas at Arlington. This website highlights my skills in React.js, Node.js, Python, MySQL, and more.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🛠️ Technologies 
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- **Frontend:** React.js, HTML, CSS  
+- **Backend:** Node.js (if applicable), REST APIs  
+- **Database:** MySQL  
+- **Framework / Hosting:** Lovable.app  
+- **Certifications:** Meta React Basics via Coursera
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## ⚙️ Features
 
-**Edit a file directly in GitHub**
+- **Home / Hero Section:** Brief introduction and interactive navigation  
+- **About Me:** Education, experience, certifications (incl. React Basics from Meta)  
+- **Projects Portfolio:** Showcase of apps—including tech stacks, links, screenshots  
+- **Skills & Tools:** Visual representation of technologies and competencies  
+- **Contact Form or Links:** Enable visitors to connect with me
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 🧭 Getting Started
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+To run this project locally:
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/12137de8-a8ae-4e44-91dd-34f9d0a49e15) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```bash
+git clone https://github.com/yourusername/portfolio-site.git
+cd portfolio-site
+npm install        # or yarn install
+npm start          # Runs the site in development mode
